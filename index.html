@@ -7,12 +7,41 @@
     <link rel="stylesheet" href="./css/output.css">
 </head>
 <body>
-<div class="wide flex gap-2 w-full mx-6 my-8    ">
+
+
+
+
+<div class=" flex gap-2 py-8  px-10  bg-gray-300 h-[100vh] justify-between   ">
+
+
+    <div class=" flex flex-col items-center px-4 bg-white rounded-2xl shadow-xl  py-4 ">
+        <button class="bg-green-500 px-8 py-2 rounded-2xl text-white whitespace-nowrap">Ajouter un Agent</button>
+    </div>
+
+
+    <div class="aspect-video max-w-[80%] w-full self-center border-4 border-white shadow-2xl rounded-2xl">
+        <div class="rooms_container text-white grid grid-cols-[38%_17%_22%_22%] grid-rows-[35%_31%_32.5%] relative w-full h-full">
+             <img src="assets/background.jpg"  class="absolute top-0 left-0  w-full h-full  rounded-2xl" alt="workspace"/>
+            <div id="conference" class="  col-start-1 col-end-2 row-start-1 row-end-2 bg-orange-700   z-10">conference</div>
+            <div id="reception" class="  gridcol col-start-1 col-end-2 row-start-2 row-end-4 bg-yellow-700  z-10">reception
+            </div>
+            <div id="servers" class="  col-start-3 col-end-4 row-start-1 row-end-2 bg-white z-10">servers</div>
+            <div id="security" class=" col-start-4 col-end-5 row-start-1 row-end-2 bg-blue-700 z-10">security</div>
+            <div id="personnel" class="  col-start-3 col-end-4 row-start-3 row-end-4  bg-green-600 z-10">personnel</div>
+            <div id="archive" class=" col-start-4 col-end-5 row-start-3 row-end-4  bg-fuchsia-400 z-10">archive</div>
+        </div>
+    </div>
+</div>
+
+
+
+<section id="form_section" class=" hidden">
     <div class="form_container md:w-auto  ">
         <form class="flex flex-col py-4 px-4 gap-y-1 bg-white border-1 border-amber-500 shadow-amber-600 rounded-2xl ">
             <label for="name">Nom</label>
             <input id="name" class="outline-1 outline-amber-400 rounded-xl px-4" type="text">
             <label for="role">Role</label>
+
             <select id="role" class="outline-1 outline-amber-400 rounded-xl px-4" type="text">
                 <option value="receptionist">Réceptionniste</option>
                 <option value="technicien">Techniciens IT</option>
@@ -21,6 +50,7 @@
                 <option value="student">Student</option>
                 <option value="teacher">Teacher</option>
             </select>
+
             <label for="image">Image</label>
             <input id="image" class="outline-1 outline-amber-400 rounded-xl px-4" type="url">
             <label for="email">Email</label>
@@ -30,19 +60,7 @@
             <button type="submit" id="btnSubmit" class=" bg-amber-700 rounded-2xl mt-4 text-white w-fit px-4 cursor-pointer py-1 self-center ">submit</button>
         </form>
     </div>
-    <div class="aspect-video w-full">
-        <div class="rooms_container text-white grid grid-cols-[38%_17%_22%_22%] grid-rows-[35%_31%_32.5%]  ">
-            <div id="conference" class="  col-start-1 col-end-2 row-start-1 row-end-2 bg-orange-700 ">conference</div>
-            <div id="reception" class="  gridcol col-start-1 col-end-2 row-start-2 row-end-4 bg-yellow-700 ">reception
-            </div>
-            <div id="servers" class="  col-start-3 col-end-4 row-start-1 row-end-2 bg-white">servers</div>
-            <div id="security" class=" col-start-4 col-end-5 row-start-1 row-end-2 bg-blue-700">security</div>
-            <div id="personnel" class="  col-start-3 col-end-4 row-start-3 row-end-4  bg-green-600">personnel</div>
-            <div id="archive" class=" col-start-4 col-end-5 row-start-3 row-end-4  bg-fuchsia-400">archive</div>
-        </div>
-    </div>
-</div>
-
+</section>
 
 
 
